@@ -1,5 +1,7 @@
 #include <iostream>
 #include <queue>
+
+//harcode one case
 using namespace std;
 int evenans = 0;
 int oddans = 0;
