@@ -1,6 +1,6 @@
 #include <iostream>
 #include <queue>
-
+ 
 //harcode one case
 using namespace std;
 int evenans = 0;
@@ -20,7 +20,7 @@ bool evencheck(){
     }
     return false;
 }
- 
+  
 bool oddcheck(){
     if (oddnum >= 1){
         oddans++;
@@ -42,33 +42,15 @@ int main(){
             oddnum++;
         }
     }
- 
-    evenans = 0;
-    oddans = 0;
- 
-    bool run = true;
-    while (run){
-        if (evenans == oddans){
-            if (evencheck()) continue;
-            // if (oddcheck()) continue;
-            run = false;
-            continue;
-        }
-        if (evenans < oddans){
-            if (evencheck()) continue;
-            run = false;
-            continue;
-        }
-        if (evenans > oddans){
-            if (oddcheck()) continue;
-            run = false;
-            continue;
-        }
+    int ans = 0;
+    string evenodd = "even";
+    while (oddnum > evennum){
+        oddnum-=2;
+        evennum++;
     }
-    cout << "\n";
-    if (evenans == oddans){
-        cout << evenans + oddans - 1;
-        return 0;
+ 
+    if (evennum > oddnum + 1){
+        evennum = oddnum + 1;
     }
-    cout << evenans + oddans;
+    cout << evennum + oddnum;
 }
