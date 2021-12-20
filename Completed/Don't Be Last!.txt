@@ -30,9 +30,6 @@ int main(){
             }
         }
     }
-    // for (int i = 0; i < names.size(); i++){
-    //     cout << arr[i].name << " ";
-    // }
     if (names.size() == 1){
         cout << arr[0].name;
         return 0;
