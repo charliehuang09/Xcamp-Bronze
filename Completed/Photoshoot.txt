@@ -16,7 +16,7 @@ int main(){
     int test = 0;
     set<int> number;
     while (true){
-        bool done = true;
+        bool done = true;/;p0.; 
         ans.clear();
         number.clear();
         test++;
