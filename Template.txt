@@ -2,24 +2,3 @@
 using namespace std;
 int main(){
 }
-
-    // int left_wall = n - 1, right_wall = 0, top = n - 1, bottom = 0;
-    // int looking_for = 2;
-    // for (int i = 0; i < n; i++){
-    //     for (int j = 0; j < n; j++){
-    //         if (p[i][j] == looking_for){
-    //             left_wall = min(left_wall, j);
-    //             right_wall = max(right_wall, j);
-    //             top = min(top, i);
-    //             bottom = max(bottom, i);
-    //         }
-    //     }
-    // }
-    // for (int i = left_wall; i <= right_wall; i++){
-    //     for (int j = top; j <= bottom; j++){
-    //         if (p[i][j] != looking_for){
-    //             //cannot be bottom
-
-    //         }
-    //     }
-    // }
