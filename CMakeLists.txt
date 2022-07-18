@@ -10,7 +10,6 @@ add_executable(Xcamp_Bronze
         "Completed/Cow Hopscotch (Bronze).cpp"
         "Completed/Cow Jog.cpp"
         "Completed/Cow Routing.cpp"
-        Completed/Cow.cpp
         "Completed/Don't Be Last!.cpp"
         "Completed/Even More Odd Photos.cpp"
         "Completed/Mowing the Field.cpp"
@@ -22,4 +21,4 @@ add_executable(Xcamp_Bronze
         Completed/Teleportation.cpp
         "Completed/Why Did the Cow Cross the Road.cpp"
         "Incompleted/Acowdemia I.cpp"
-        "Incompleted/Modern Art.cpp")
+        "Incompleted/Modern Art.cpp" Incompleted/Herdle.cpp)
