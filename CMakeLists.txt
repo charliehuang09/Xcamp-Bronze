@@ -21,4 +21,4 @@ add_executable(Xcamp_Bronze
         Completed/Teleportation.cpp
         "Completed/Why Did the Cow Cross the Road.cpp"
         "Incompleted/Acowdemia I.cpp"
-        "Incompleted/Modern Art.cpp" Incompleted/Herdle.cpp)
+        "Incompleted/Modern Art.cpp" Completed/Herdle.cpp "Incompleted/Vasya and Books.cpp")
