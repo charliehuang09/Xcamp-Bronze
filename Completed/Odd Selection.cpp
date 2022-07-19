@@ -20,7 +20,37 @@
 //            odd++;
 //        }
 //    }
+//    if (odd == 0){
+//        cout << "No\n";
+//        return;
+//    }
 //
+//    if (even + odd < x){
+//        cout << "No\n";
+//        return;
+//    }
+//
+//    if (even >= 1){
+//        if (odd % 2 == 0){
+//            odd--;
+//        }
+//        if (odd + even >= x){
+//            cout << "Yes\n";
+//            return;
+//        }
+//        else{
+//            cout << "No\n";
+//            return;
+//        }
+//    }
+//    else{
+//        if (odd >= x && x % 2 == 1){
+//            cout << "Yes\n";
+//            return;
+//        }
+//    }
+//    cout << "No\n";
+//    return;
 //}
 //int main(){
 //    ios_base::sync_with_stdio(0);
