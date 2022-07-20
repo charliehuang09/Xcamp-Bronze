@@ -21,4 +21,4 @@ add_executable(Xcamp_Bronze
         Completed/Teleportation.cpp
         "Completed/Why Did the Cow Cross the Road.cpp"
         "Incompleted/Acowdemia I.cpp"
-        "Incompleted/Modern Art.cpp" Completed/Herdle.cpp "Completed/Vasya and Books.cpp" "Completed/Appending Mex.cpp" "Completed/Email from Polycarp.cpp" "Completed/Cheap Travel.cpp" "Completed/Shell Game.cpp" "Completed/Pashmak and Garden.cpp" "Completed/Odd Selection.cpp" Completed/Worms.cpp "Completed/Table Tennis.cpp" "Incompleted/Sort the Array.cpp")
+        "Incompleted/Modern Art.cpp" Completed/Herdle.cpp "Completed/Vasya and Books.cpp" "Completed/Appending Mex.cpp" "Completed/Email from Polycarp.cpp" "Completed/Cheap Travel.cpp" "Completed/Shell Game.cpp" "Completed/Pashmak and Garden.cpp" "Completed/Odd Selection.cpp" Completed/Worms.cpp "Completed/Table Tennis.cpp" "Incompleted/Sort the Array.cpp" Completed/X-Sum.cpp)
