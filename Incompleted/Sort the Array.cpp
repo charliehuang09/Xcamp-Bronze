@@ -66,3 +66,25 @@
 //    }
 //    cout << "no";
 //}
+
+//#include <iostream>
+//#include <vector>
+//#include <set>
+//#include <cstring>
+//#include <map>
+//#include <queue>
+//#include <algorithm>
+//using namespace std;
+//
+//int main(){
+//    int array[3] = {1, 2, 3};
+//    for (int i = 0; i < 3; i++){
+//        for (int j = 0; j < 3; j++){
+//            for (int k = 0; k < 3; k++){
+//                if (i != j && i != k && j != k){
+//                    cout << array[i] << array[j] << array[k] << "\n";
+//                }
+//            }
+//        }
+//    }
+//}
