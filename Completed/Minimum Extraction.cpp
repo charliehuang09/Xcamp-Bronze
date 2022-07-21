@@ -17,16 +17,16 @@ void solve(){
     }
 
     int output = -2147483647;
+    int sum = 0;
     while(input.size() >= 2){
         int minElementIndex = std::min_element(input.begin(),input.end()) - input.begin();
         int min = input[minElementIndex];
+        min += sum;
+        sum -= min;
         output = max(min, output);
-        for (int i = 0; i < input.size(); i++){
-            input[i] -= min;
-        }
         input.erase(input.begin() + minElementIndex);
     }
-    cout << max(input[0], output) << "\n";
+    cout << max(input[0] + sum, output) << "\n";
     return;
 }
 
