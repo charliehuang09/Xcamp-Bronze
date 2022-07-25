@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Xcamp_Bronze
         "Completed/Bucket Brigade.cpp"
-        "Completed/Clockwise Fence.cpp"
+        "Completed/Clockwise_Fence.cpp"
         "Completed/Contaminated Milk.cpp"
         "Completed/Cow Hopscotch (Bronze).cpp"
         "Completed/Cow Jog.cpp"

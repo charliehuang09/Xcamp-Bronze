@@ -8,7 +8,7 @@
 using namespace std;
 const int length = 7;
 
-bool solve(int a, int b, int c, int ab, int bc, int ca, int abc){
+bool solve(long long int  a, long long int  b, long long int  c, long long int  ab, long long int  bc, long long int  ca, long long int  abc){
     if (a + b != ab){
         return false;
     }
@@ -21,47 +21,40 @@ bool solve(int a, int b, int c, int ab, int bc, int ca, int abc){
     if (a + b + c != abc){
         return false;
     }
-    return true;
+    if (a <= b <= c){
+        cout << a << " " << b << " " << c << "\n";
+    }
+    exit(0);
 }
+
+void permute(long long int input[7], int l, int r){
+    if (l == r){
+//        for (int i = 0; i < length; i++){
+//            cout << input[i] << " ";
+//        }
+//        cout << "\n";
+        solve(input[0], input[1], input[2], input[3], input[4], input[5], input[6]);
+        return;
+    }
+    else{
+        for (int i = l; i <= r; i++){
+            swap(input[l], input[i]);
+            permute(input, l + 1, r);
+            swap(input[l], input[i]);
+        }
+    }
+}
+
 
 int main(){
     ios_base::sync_with_stdio(0);
     cin.tie(0);
 
-    int input[length];
+    long long int input[length];
     for (int i = 0; i < length; i++){
         cin >> input[i];
     }
 
-    set<int> check;
+    permute(input, 0, 6);
 
-    for (int a = 0; a < length; a++){
-        for (int b = 0; b < length; b++){
-            for (int c = 0; c < length; c++){
-                for (int d = 0; d < length; d++){
-                    for (int e = 0; e < length; e++){
-                        for (int f = 0; f < length; f++){
-                            for (int g = 0; g < length; g++){
-                                check.insert(a);
-                                check.insert(b);
-                                check.insert(c);
-                                check.insert(d);
-                                check.insert(e);
-                                check.insert(f);
-                                check.insert(g);
-                                if (check.size() == length){
-//                                    cout << a << " " << b << " " << c << " " << d << " " << e << " " << f << " " << g << "\n";
-                                    if (solve(input[a], input[b], input[c], input[d], input[e], input[f], input[g])){
-                                        cout << input[a] << " " << input[b] << " " << input[c];
-//                                        return 0;
-                                    }
-                                }
-                                check.clear();
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
