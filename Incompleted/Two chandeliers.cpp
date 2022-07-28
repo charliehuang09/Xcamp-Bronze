@@ -29,6 +29,11 @@ int main(){
     int two = 0;
     int index = 0;
     int subtracted = 0;
+    map<pair<int, int>, int> map;
+    pair <int, int> temp;
+    temp.first = 0;
+    temp.second = 0;
+    map[temp] = 1;
     while(angry > 0){
         if (input1[one] != input2[two]){
             angry--;
@@ -39,10 +44,16 @@ int main(){
         one %= l1;
         two %= l2;
         index++;
-        if (one == 0 && two == 0){
+        temp.first = one;
+        temp.second = two;
+        if (map[temp] != 0){
             break;
         }
+        map[temp] = index + 1;
     }
+//    cout << map[temp] << " " << angry << " " << temp.first << " " << temp.second << "\n";
+//    cout << subtracted;
+//    return 0;
     int t = 1;
     while(angry - subtracted >= 0){
         angry -= subtracted;
@@ -50,6 +61,7 @@ int main(){
     }
     index *= t;
 //    cout << index << " " << angry << " " << t << "\n";
+//    return 0;
     while(angry > 0){
         if (input1[one] != input2[two]){
             angry--;
