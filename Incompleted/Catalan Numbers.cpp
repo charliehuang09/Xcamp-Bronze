@@ -23,7 +23,7 @@
 //    cin.tie(0);
 //
 //    unsigned long long int  input = 5;
-//    for (unsigned long long int  i = 2; i <= input; i++){
+//    for (unsigned long long int  i = 0; i <= input; i++){
 //        cout << i << " " << cat(i) << "\n";
 //    }
 //}
