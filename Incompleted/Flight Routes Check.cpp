@@ -8,12 +8,11 @@
 using namespace std;
 
 set<int> visited;
-set<int> input[1000000];
+set<int> input[2000000];
 void dfs(int x){
     int t = visited.size();
     visited.insert(x);
     if (t == (int)visited.size()) return;
-    if (visited.size())
     for (auto &itr : input[x]){
         dfs(itr);
         visited.insert(itr);
@@ -47,7 +46,7 @@ int main(){
                 }
                 index++;
             }
-            cout << index;
+            cout << index + 1;
             return 0;
         }
         input[i].insert(visited.begin(), visited.end());
